@@ -1,0 +1,2 @@
+PODS_RPI_VOLUME_NMSSH_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/NMSSH/NMSSH-OSX/Libraries/lib" "$(PODS_ROOT)/NMSSH/NMSSH-OSX/Libraries/lib" "$(PODS_ROOT)/NMSSH/NMSSH-OSX/Libraries/lib"
+PODS_RPI_VOLUME_NMSSH_OTHER_LDFLAGS = -ObjC -l"crypto" -l"ssh2" -l"ssl" -l"z" -framework "CFNetwork"
