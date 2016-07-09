@@ -684,14 +684,6 @@
                                     <action selector="Connect:" target="XfG-lQ-9wD" id="ClB-Ko-xo3"/>
                                 </connections>
                             </button>
-                            <slider horizontalHuggingPriority="750" id="uI7-VX-fOT">
-                                <rect key="frame" x="84" y="30" width="21" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="KoI-Ng-Ieo"/>
-                                <connections>
-                                    <action selector="volume:" target="XfG-lQ-9wD" id="FDe-yQ-xVS"/>
-                                </connections>
-                            </slider>
                             <textField verticalHuggingPriority="750" id="7lt-df-Lmu">
                                 <rect key="frame" x="35" y="218" width="118" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -704,17 +696,14 @@
                                     <action selector="ipAddress:" target="XfG-lQ-9wD" id="iWX-hs-OtD"/>
                                 </connections>
                             </textField>
-                            <button verticalHuggingPriority="750" id="Ibj-PL-WDW">
-                                <rect key="frame" x="43" y="163" width="102" height="21"/>
+                            <slider horizontalHuggingPriority="750" id="uI7-VX-fOT">
+                                <rect key="frame" x="84" y="43" width="21" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="smallSquare" title="Disconnect" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VAa-mO-uqA">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
+                                <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="KoI-Ng-Ieo"/>
                                 <connections>
-                                    <action selector="disconnect:" target="XfG-lQ-9wD" id="WAm-PY-wTC"/>
+                                    <action selector="volume:" target="XfG-lQ-9wD" id="FDe-yQ-xVS"/>
                                 </connections>
-                            </button>
+                            </slider>
                         </subviews>
                     </view>
                     <connections>

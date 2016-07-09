@@ -14,7 +14,27 @@
 - (IBAction)ipAddress:(NSTextField *)sender {
 }
 
+NMSSHSession *session;
+
 - (IBAction)Connect:(NSButton *)sender {
+    NSString *ipaddress = [NSString stringWithString:self.iplabel.stringValue];
+    NMSSHSession *session = [NMSSHSession connectToHost:ipaddress
+                                           withUsername:@"pi"];
+    
+    if (session.isConnected){
+        [session authenticateByPassword:@"raspberry"];
+        
+        if (session.isAuthorized){
+            NSLog(@"Authentication succeeded");
+        }
+    }
+    [session disconnect];
+
+}
+
+
+- (void) volumeController:(int)val{
+    
     NSString *ipaddress = [NSString stringWithString:self.iplabel.stringValue];
     NMSSHSession *session = [NMSSHSession connectToHost:ipaddress
                                            withUsername:@"pi"];
@@ -34,14 +54,15 @@
     NSLog(@"pactl stuff: %@",val_sp);
     NSString *stmt = [temp stringByAppendingString:val_sp];
     NSString *response = [session.channel execute:stmt error:&error];
-    NSLog(@"blah %@",response);
 
-
+    
+    [session disconnect];
 }
 
 - (IBAction)volume:(id)sender {
     int sliderValue = self.slider.intValue;
     val = sliderValue;
+    [self volumeController:val];
     NSLog(@"slide val %d", val);
 }
 
