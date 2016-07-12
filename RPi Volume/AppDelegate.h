@@ -10,6 +10,6 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-
+@property (strong, nonatomic) NSStatusItem *statusItem;
 @end
 

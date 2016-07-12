@@ -16,6 +16,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    _statusItem.title = @"V";
+    _statusItem.highlightMode = YES;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

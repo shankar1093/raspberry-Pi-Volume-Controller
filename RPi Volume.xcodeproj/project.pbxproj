@@ -1,1120 +1,580 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>4A8982C943D22FFEA435422A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RPi Volume.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RPi Volume/Pods-RPi Volume.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>814B2EF2823F324487B2B38B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RPi Volume.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RPi Volume/Pods-RPi Volume.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9238260EBCA2DA9536F48E3F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEA69AFB44CB3E3AA4BFDD44</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9EF259F337BE673246E10AEC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C36007C4220891C5A5C420C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RPi Volume/Pods-RPi Volume-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C3B852149B58EC8A276BB170</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEA69AFB44CB3E3AA4BFDD44</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D6751F8E4E564EE89DD72043</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4A8982C943D22FFEA435422A</string>
-				<string>814B2EF2823F324487B2B38B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699651D18CA47003BDE42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E57699701D18CA47003BDE42</string>
-				<string>E57699871D18CA48003BDE42</string>
-				<string>E57699921D18CA48003BDE42</string>
-				<string>E576996F1D18CA47003BDE42</string>
-				<string>D6751F8E4E564EE89DD72043</string>
-				<string>C3B852149B58EC8A276BB170</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699661D18CA47003BDE42</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Shankar Rao</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E576996D1D18CA47003BDE42</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-					<key>E57699831D18CA48003BDE42</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>E576996D1D18CA47003BDE42</string>
-					</dict>
-					<key>E576998E1D18CA48003BDE42</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>E576996D1D18CA47003BDE42</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E57699691D18CA47003BDE42</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E57699651D18CA47003BDE42</string>
-			<key>productRefGroup</key>
-			<string>E576996F1D18CA47003BDE42</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E576996D1D18CA47003BDE42</string>
-				<string>E57699831D18CA48003BDE42</string>
-				<string>E576998E1D18CA48003BDE42</string>
-			</array>
-		</dict>
-		<key>E57699691D18CA47003BDE42</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E57699961D18CA48003BDE42</string>
-				<string>E57699971D18CA48003BDE42</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E576996A1D18CA47003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E57699791D18CA47003BDE42</string>
-				<string>E57699761D18CA47003BDE42</string>
-				<string>E57699731D18CA47003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E576996B1D18CA47003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9238260EBCA2DA9536F48E3F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E576996C1D18CA47003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E576997B1D18CA47003BDE42</string>
-				<string>E576997E1D18CA47003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E576996D1D18CA47003BDE42</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E57699981D18CA48003BDE42</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9EF259F337BE673246E10AEC</string>
-				<string>E576996A1D18CA47003BDE42</string>
-				<string>E576996B1D18CA47003BDE42</string>
-				<string>E576996C1D18CA47003BDE42</string>
-				<string>C36007C4220891C5A5C420C0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RPi Volume</string>
-			<key>productName</key>
-			<string>RPi Volume</string>
-			<key>productReference</key>
-			<string>E576996E1D18CA47003BDE42</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E576996E1D18CA47003BDE42</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RPi Volume.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E576996F1D18CA47003BDE42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E576996E1D18CA47003BDE42</string>
-				<string>E57699841D18CA48003BDE42</string>
-				<string>E576998F1D18CA48003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699701D18CA47003BDE42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E57699711D18CA47003BDE42</string>
-				<string>E57699721D18CA47003BDE42</string>
-				<string>E57699771D18CA47003BDE42</string>
-				<string>E57699781D18CA47003BDE42</string>
-				<string>E576997A1D18CA47003BDE42</string>
-				<string>E576997C1D18CA47003BDE42</string>
-				<string>E576997F1D18CA47003BDE42</string>
-				<string>E57699741D18CA47003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RPi Volume</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699711D18CA47003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699721D18CA47003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699731D18CA47003BDE42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E57699721D18CA47003BDE42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E57699741D18CA47003BDE42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E57699751D18CA47003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699751D18CA47003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699761D18CA47003BDE42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E57699751D18CA47003BDE42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E57699771D18CA47003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699781D18CA47003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699791D18CA47003BDE42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E57699781D18CA47003BDE42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E576997A1D18CA47003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E576997B1D18CA47003BDE42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E576997A1D18CA47003BDE42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E576997C1D18CA47003BDE42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E576997D1D18CA47003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E576997D1D18CA47003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E576997E1D18CA47003BDE42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E576997C1D18CA47003BDE42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E576997F1D18CA47003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699801D18CA48003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E57699891D18CA48003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E57699811D18CA48003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E57699821D18CA48003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E57699831D18CA48003BDE42</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E576999B1D18CA48003BDE42</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E57699801D18CA48003BDE42</string>
-				<string>E57699811D18CA48003BDE42</string>
-				<string>E57699821D18CA48003BDE42</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E57699861D18CA48003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RPi VolumeTests</string>
-			<key>productName</key>
-			<string>RPi VolumeTests</string>
-			<key>productReference</key>
-			<string>E57699841D18CA48003BDE42</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>E57699841D18CA48003BDE42</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RPi VolumeTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E57699851D18CA48003BDE42</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E57699661D18CA47003BDE42</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E576996D1D18CA47003BDE42</string>
-			<key>remoteInfo</key>
-			<string>RPi Volume</string>
-		</dict>
-		<key>E57699861D18CA48003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E576996D1D18CA47003BDE42</string>
-			<key>targetProxy</key>
-			<string>E57699851D18CA48003BDE42</string>
-		</dict>
-		<key>E57699871D18CA48003BDE42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E57699881D18CA48003BDE42</string>
-				<string>E576998A1D18CA48003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RPi VolumeTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699881D18CA48003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RPi_VolumeTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699891D18CA48003BDE42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E57699881D18CA48003BDE42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E576998A1D18CA48003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E576998B1D18CA48003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E57699941D18CA48003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E576998C1D18CA48003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E576998D1D18CA48003BDE42</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E576998E1D18CA48003BDE42</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E576999E1D18CA48003BDE42</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E576998B1D18CA48003BDE42</string>
-				<string>E576998C1D18CA48003BDE42</string>
-				<string>E576998D1D18CA48003BDE42</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E57699911D18CA48003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RPi VolumeUITests</string>
-			<key>productName</key>
-			<string>RPi VolumeUITests</string>
-			<key>productReference</key>
-			<string>E576998F1D18CA48003BDE42</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>E576998F1D18CA48003BDE42</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RPi VolumeUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E57699901D18CA48003BDE42</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E57699661D18CA47003BDE42</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E576996D1D18CA47003BDE42</string>
-			<key>remoteInfo</key>
-			<string>RPi Volume</string>
-		</dict>
-		<key>E57699911D18CA48003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E576996D1D18CA47003BDE42</string>
-			<key>targetProxy</key>
-			<string>E57699901D18CA48003BDE42</string>
-		</dict>
-		<key>E57699921D18CA48003BDE42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E57699931D18CA48003BDE42</string>
-				<string>E57699951D18CA48003BDE42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RPi VolumeUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699931D18CA48003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RPi_VolumeUITests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699941D18CA48003BDE42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E57699931D18CA48003BDE42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E57699951D18CA48003BDE42</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E57699961D18CA48003BDE42</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>-</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.11</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E57699971D18CA48003BDE42</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>-</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.11</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E57699981D18CA48003BDE42</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E57699991D18CA48003BDE42</string>
-				<string>E576999A1D18CA48003BDE42</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E57699991D18CA48003BDE42</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4A8982C943D22FFEA435422A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RPi Volume/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.shankarDev.content.RPi-Volume</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E576999A1D18CA48003BDE42</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>814B2EF2823F324487B2B38B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RPi Volume/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.shankarDev.content.RPi-Volume</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E576999B1D18CA48003BDE42</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E576999C1D18CA48003BDE42</string>
-				<string>E576999D1D18CA48003BDE42</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E576999C1D18CA48003BDE42</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RPi VolumeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.shankarDev.content.RPi-VolumeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RPi Volume.app/Contents/MacOS/RPi Volume</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E576999D1D18CA48003BDE42</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RPi VolumeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.shankarDev.content.RPi-VolumeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RPi Volume.app/Contents/MacOS/RPi Volume</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E576999E1D18CA48003BDE42</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E576999F1D18CA48003BDE42</string>
-				<string>E57699A01D18CA48003BDE42</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E576999F1D18CA48003BDE42</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RPi VolumeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.shankarDev.content.RPi-VolumeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>RPi Volume</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E57699A01D18CA48003BDE42</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RPi VolumeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.shankarDev.content.RPi-VolumeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>RPi Volume</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EEA69AFB44CB3E3AA4BFDD44</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-RPi Volume.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E57699661D18CA47003BDE42</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9238260EBCA2DA9536F48E3F /* libPods-RPi Volume.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA69AFB44CB3E3AA4BFDD44 /* libPods-RPi Volume.a */; };
+		E57699731D18CA47003BDE42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57699721D18CA47003BDE42 /* AppDelegate.m */; };
+		E57699761D18CA47003BDE42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57699751D18CA47003BDE42 /* main.m */; };
+		E57699791D18CA47003BDE42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57699781D18CA47003BDE42 /* ViewController.m */; };
+		E576997B1D18CA47003BDE42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E576997A1D18CA47003BDE42 /* Assets.xcassets */; };
+		E576997E1D18CA47003BDE42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E576997C1D18CA47003BDE42 /* Main.storyboard */; };
+		E57699891D18CA48003BDE42 /* RPi_VolumeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57699881D18CA48003BDE42 /* RPi_VolumeTests.m */; };
+		E57699941D18CA48003BDE42 /* RPi_VolumeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57699931D18CA48003BDE42 /* RPi_VolumeUITests.m */; };
+		E5B631611D34ABD900FAD95C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B631601D34ABD900FAD95C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E57699851D18CA48003BDE42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57699661D18CA47003BDE42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E576996D1D18CA47003BDE42;
+			remoteInfo = "RPi Volume";
+		};
+		E57699901D18CA48003BDE42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57699661D18CA47003BDE42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E576996D1D18CA47003BDE42;
+			remoteInfo = "RPi Volume";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A8982C943D22FFEA435422A /* Pods-RPi Volume.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPi Volume.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPi Volume/Pods-RPi Volume.debug.xcconfig"; sourceTree = "<group>"; };
+		814B2EF2823F324487B2B38B /* Pods-RPi Volume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPi Volume.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPi Volume/Pods-RPi Volume.release.xcconfig"; sourceTree = "<group>"; };
+		E576996E1D18CA47003BDE42 /* RPi Volume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPi Volume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57699711D18CA47003BDE42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E57699721D18CA47003BDE42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E57699751D18CA47003BDE42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E57699771D18CA47003BDE42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E57699781D18CA47003BDE42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E576997A1D18CA47003BDE42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E576997D1D18CA47003BDE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E576997F1D18CA47003BDE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57699841D18CA48003BDE42 /* RPi VolumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPi VolumeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57699881D18CA48003BDE42 /* RPi_VolumeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPi_VolumeTests.m; sourceTree = "<group>"; };
+		E576998A1D18CA48003BDE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E576998F1D18CA48003BDE42 /* RPi VolumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPi VolumeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57699931D18CA48003BDE42 /* RPi_VolumeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPi_VolumeUITests.m; sourceTree = "<group>"; };
+		E57699951D18CA48003BDE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5B631601D34ABD900FAD95C /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		EEA69AFB44CB3E3AA4BFDD44 /* libPods-RPi Volume.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPi Volume.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E576996B1D18CA47003BDE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9238260EBCA2DA9536F48E3F /* libPods-RPi Volume.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57699811D18CA48003BDE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576998C1D18CA48003BDE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3B852149B58EC8A276BB170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEA69AFB44CB3E3AA4BFDD44 /* libPods-RPi Volume.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6751F8E4E564EE89DD72043 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A8982C943D22FFEA435422A /* Pods-RPi Volume.debug.xcconfig */,
+				814B2EF2823F324487B2B38B /* Pods-RPi Volume.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E57699651D18CA47003BDE42 = {
+			isa = PBXGroup;
+			children = (
+				E57699701D18CA47003BDE42 /* RPi Volume */,
+				E57699871D18CA48003BDE42 /* RPi VolumeTests */,
+				E57699921D18CA48003BDE42 /* RPi VolumeUITests */,
+				E576996F1D18CA47003BDE42 /* Products */,
+				D6751F8E4E564EE89DD72043 /* Pods */,
+				C3B852149B58EC8A276BB170 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E576996F1D18CA47003BDE42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E576996E1D18CA47003BDE42 /* RPi Volume.app */,
+				E57699841D18CA48003BDE42 /* RPi VolumeTests.xctest */,
+				E576998F1D18CA48003BDE42 /* RPi VolumeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E57699701D18CA47003BDE42 /* RPi Volume */ = {
+			isa = PBXGroup;
+			children = (
+				E57699711D18CA47003BDE42 /* AppDelegate.h */,
+				E57699721D18CA47003BDE42 /* AppDelegate.m */,
+				E57699771D18CA47003BDE42 /* ViewController.h */,
+				E57699781D18CA47003BDE42 /* ViewController.m */,
+				E576997A1D18CA47003BDE42 /* Assets.xcassets */,
+				E576997C1D18CA47003BDE42 /* Main.storyboard */,
+				E5B631601D34ABD900FAD95C /* MainMenu.xib */,
+				E576997F1D18CA47003BDE42 /* Info.plist */,
+				E57699741D18CA47003BDE42 /* Supporting Files */,
+			);
+			path = "RPi Volume";
+			sourceTree = "<group>";
+		};
+		E57699741D18CA47003BDE42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57699751D18CA47003BDE42 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E57699871D18CA48003BDE42 /* RPi VolumeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E57699881D18CA48003BDE42 /* RPi_VolumeTests.m */,
+				E576998A1D18CA48003BDE42 /* Info.plist */,
+			);
+			path = "RPi VolumeTests";
+			sourceTree = "<group>";
+		};
+		E57699921D18CA48003BDE42 /* RPi VolumeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E57699931D18CA48003BDE42 /* RPi_VolumeUITests.m */,
+				E57699951D18CA48003BDE42 /* Info.plist */,
+			);
+			path = "RPi VolumeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E576996D1D18CA47003BDE42 /* RPi Volume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57699981D18CA48003BDE42 /* Build configuration list for PBXNativeTarget "RPi Volume" */;
+			buildPhases = (
+				9EF259F337BE673246E10AEC /* Check Pods Manifest.lock */,
+				E576996A1D18CA47003BDE42 /* Sources */,
+				E576996B1D18CA47003BDE42 /* Frameworks */,
+				E576996C1D18CA47003BDE42 /* Resources */,
+				C36007C4220891C5A5C420C0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPi Volume";
+			productName = "RPi Volume";
+			productReference = E576996E1D18CA47003BDE42 /* RPi Volume.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E57699831D18CA48003BDE42 /* RPi VolumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E576999B1D18CA48003BDE42 /* Build configuration list for PBXNativeTarget "RPi VolumeTests" */;
+			buildPhases = (
+				E57699801D18CA48003BDE42 /* Sources */,
+				E57699811D18CA48003BDE42 /* Frameworks */,
+				E57699821D18CA48003BDE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E57699861D18CA48003BDE42 /* PBXTargetDependency */,
+			);
+			name = "RPi VolumeTests";
+			productName = "RPi VolumeTests";
+			productReference = E57699841D18CA48003BDE42 /* RPi VolumeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E576998E1D18CA48003BDE42 /* RPi VolumeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E576999E1D18CA48003BDE42 /* Build configuration list for PBXNativeTarget "RPi VolumeUITests" */;
+			buildPhases = (
+				E576998B1D18CA48003BDE42 /* Sources */,
+				E576998C1D18CA48003BDE42 /* Frameworks */,
+				E576998D1D18CA48003BDE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E57699911D18CA48003BDE42 /* PBXTargetDependency */,
+			);
+			name = "RPi VolumeUITests";
+			productName = "RPi VolumeUITests";
+			productReference = E576998F1D18CA48003BDE42 /* RPi VolumeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E57699661D18CA47003BDE42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Shankar Rao";
+				TargetAttributes = {
+					E576996D1D18CA47003BDE42 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E57699831D18CA48003BDE42 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E576996D1D18CA47003BDE42;
+					};
+					E576998E1D18CA48003BDE42 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E576996D1D18CA47003BDE42;
+					};
+				};
+			};
+			buildConfigurationList = E57699691D18CA47003BDE42 /* Build configuration list for PBXProject "RPi Volume" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E57699651D18CA47003BDE42;
+			productRefGroup = E576996F1D18CA47003BDE42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E576996D1D18CA47003BDE42 /* RPi Volume */,
+				E57699831D18CA48003BDE42 /* RPi VolumeTests */,
+				E576998E1D18CA48003BDE42 /* RPi VolumeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E576996C1D18CA47003BDE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E576997B1D18CA47003BDE42 /* Assets.xcassets in Resources */,
+				E576997E1D18CA47003BDE42 /* Main.storyboard in Resources */,
+				E5B631611D34ABD900FAD95C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57699821D18CA48003BDE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576998D1D18CA48003BDE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EF259F337BE673246E10AEC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C36007C4220891C5A5C420C0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPi Volume/Pods-RPi Volume-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E576996A1D18CA47003BDE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57699791D18CA47003BDE42 /* ViewController.m in Sources */,
+				E57699761D18CA47003BDE42 /* main.m in Sources */,
+				E57699731D18CA47003BDE42 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57699801D18CA48003BDE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57699891D18CA48003BDE42 /* RPi_VolumeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576998B1D18CA48003BDE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57699941D18CA48003BDE42 /* RPi_VolumeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E57699861D18CA48003BDE42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E576996D1D18CA47003BDE42 /* RPi Volume */;
+			targetProxy = E57699851D18CA48003BDE42 /* PBXContainerItemProxy */;
+		};
+		E57699911D18CA48003BDE42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E576996D1D18CA47003BDE42 /* RPi Volume */;
+			targetProxy = E57699901D18CA48003BDE42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E576997C1D18CA47003BDE42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E576997D1D18CA47003BDE42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E57699961D18CA48003BDE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E57699971D18CA48003BDE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E57699991D18CA48003BDE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8982C943D22FFEA435422A /* Pods-RPi Volume.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "RPi Volume/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shankarDev.content.RPi-Volume";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E576999A1D18CA48003BDE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814B2EF2823F324487B2B38B /* Pods-RPi Volume.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "RPi Volume/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shankarDev.content.RPi-Volume";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E576999C1D18CA48003BDE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "RPi VolumeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shankarDev.content.RPi-VolumeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPi Volume.app/Contents/MacOS/RPi Volume";
+			};
+			name = Debug;
+		};
+		E576999D1D18CA48003BDE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "RPi VolumeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shankarDev.content.RPi-VolumeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPi Volume.app/Contents/MacOS/RPi Volume";
+			};
+			name = Release;
+		};
+		E576999F1D18CA48003BDE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "RPi VolumeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shankarDev.content.RPi-VolumeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RPi Volume";
+			};
+			name = Debug;
+		};
+		E57699A01D18CA48003BDE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "RPi VolumeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shankarDev.content.RPi-VolumeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RPi Volume";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E57699691D18CA47003BDE42 /* Build configuration list for PBXProject "RPi Volume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57699961D18CA48003BDE42 /* Debug */,
+				E57699971D18CA48003BDE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57699981D18CA48003BDE42 /* Build configuration list for PBXNativeTarget "RPi Volume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57699991D18CA48003BDE42 /* Debug */,
+				E576999A1D18CA48003BDE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E576999B1D18CA48003BDE42 /* Build configuration list for PBXNativeTarget "RPi VolumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E576999C1D18CA48003BDE42 /* Debug */,
+				E576999D1D18CA48003BDE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E576999E1D18CA48003BDE42 /* Build configuration list for PBXNativeTarget "RPi VolumeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E576999F1D18CA48003BDE42 /* Debug */,
+				E57699A01D18CA48003BDE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E57699661D18CA47003BDE42 /* Project object */;
+}
