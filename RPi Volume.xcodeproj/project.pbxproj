@@ -15,7 +15,6 @@
 		E576997E1D18CA47003BDE42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E576997C1D18CA47003BDE42 /* Main.storyboard */; };
 		E57699891D18CA48003BDE42 /* RPi_VolumeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57699881D18CA48003BDE42 /* RPi_VolumeTests.m */; };
 		E57699941D18CA48003BDE42 /* RPi_VolumeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57699931D18CA48003BDE42 /* RPi_VolumeUITests.m */; };
-		E5B631611D34ABD900FAD95C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B631601D34ABD900FAD95C /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,6 @@
 		E576998F1D18CA48003BDE42 /* RPi VolumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPi VolumeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57699931D18CA48003BDE42 /* RPi_VolumeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPi_VolumeUITests.m; sourceTree = "<group>"; };
 		E57699951D18CA48003BDE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5B631601D34ABD900FAD95C /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		EEA69AFB44CB3E3AA4BFDD44 /* libPods-RPi Volume.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPi Volume.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,7 +129,6 @@
 				E57699781D18CA47003BDE42 /* ViewController.m */,
 				E576997A1D18CA47003BDE42 /* Assets.xcassets */,
 				E576997C1D18CA47003BDE42 /* Main.storyboard */,
-				E5B631601D34ABD900FAD95C /* MainMenu.xib */,
 				E576997F1D18CA47003BDE42 /* Info.plist */,
 				E57699741D18CA47003BDE42 /* Supporting Files */,
 			);
@@ -271,7 +268,6 @@
 			files = (
 				E576997B1D18CA47003BDE42 /* Assets.xcassets in Resources */,
 				E576997E1D18CA47003BDE42 /* Main.storyboard in Resources */,
-				E5B631611D34ABD900FAD95C /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

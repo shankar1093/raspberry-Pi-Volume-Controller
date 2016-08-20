@@ -16,6 +16,8 @@
 @property (weak) IBOutlet NSSlider *slider;
 @property (weak) IBOutlet NSTextField *iplabel;
 @property NSString *remote_ip_address;
+@property (weak) IBOutlet NSTextField *connected;
+@property (weak) IBOutlet NSTextField *disconnected;
 
 
 

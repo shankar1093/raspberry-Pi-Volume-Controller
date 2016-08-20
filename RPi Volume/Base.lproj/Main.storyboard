@@ -670,50 +670,65 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="189" height="260"/>
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="260"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" id="7VK-eZ-m2o">
-                                <rect key="frame" x="43" y="190" width="102" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="smallSquare" title="Connect " bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YcD-Na-vHd">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="Connect:" target="XfG-lQ-9wD" id="ClB-Ko-xo3"/>
-                                </connections>
-                            </button>
-                            <textField verticalHuggingPriority="750" id="7lt-df-Lmu">
-                                <rect key="frame" x="35" y="218" width="118" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Ghp-3R-ng7">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <action selector="ipAddress:" target="XfG-lQ-9wD" id="iWX-hs-OtD"/>
-                                </connections>
-                            </textField>
                             <slider horizontalHuggingPriority="750" id="uI7-VX-fOT">
-                                <rect key="frame" x="84" y="43" width="21" height="125"/>
+                                <rect key="frame" x="84" y="63" width="21" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="KoI-Ng-Ieo"/>
                                 <connections>
                                     <action selector="volume:" target="XfG-lQ-9wD" id="FDe-yQ-xVS"/>
                                 </connections>
                             </slider>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="Xiz-4c-FuS">
+                                <rect key="frame" x="22" y="194" width="145" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Connects to Raspberry Pi automatically" id="3EA-Jx-mP6">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="BTn-bO-QL3">
+                                <rect key="frame" x="34" y="21" width="50" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status:" id="2PS-UB-icc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="0Z0-I5-O19">
+                                <rect key="frame" x="84" y="21" width="71" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Connected" id="ANc-8e-Dm9">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="87Y-Zc-b6f">
+                                <rect key="frame" x="84" y="21" width="93" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Disconnected" id="sKv-wN-FZF">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="0.95174310238737814" green="0.33259551854510055" blue="0.23232188820838928" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="iplabel" destination="7lt-df-Lmu" id="pOr-mn-vgN"/>
+                        <outlet property="State" destination="87Y-Zc-b6f" id="nTV-dK-qWv"/>
+                        <outlet property="connected" destination="0Z0-I5-O19" id="8KG-5d-KCT"/>
+                        <outlet property="disconnected" destination="87Y-Zc-b6f" id="q1a-Ip-IyX"/>
                         <outlet property="slider" destination="uI7-VX-fOT" id="2TW-Tz-rot"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240.5" y="720"/>
+            <point key="canvasLocation" x="240" y="720"/>
         </scene>
     </scenes>
 </document>

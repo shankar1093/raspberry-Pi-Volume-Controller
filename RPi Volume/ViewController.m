@@ -93,6 +93,12 @@ NMSSHSession *session;
     NSString *raspberry_pi_ip_address = [ip_address_pre_edit stringByReplacingOccurrencesOfString:@")" withString:@""];
     self.remote_ip_address=raspberry_pi_ip_address;
     NSLog (@"arp returned:\n%@",_remote_ip_address);
+    if (_remote_ip_address.length==0){
+        _connected.hidden = YES;
+    }
+    else{
+        _disconnected.hidden = YES;
+    }
 }
 
 - (void)setRepresentedObject:(id)representedObject {
