@@ -46,7 +46,7 @@ NMSSHSession *session;
             NSLog(@"Authentication succeeded");
         }
     }
-    NSLog(@"Stuff:@",_remote_ip_address);
+
     NSError *error = nil;
     NSString *temp = @"pactl set-sink-volume 0 ";
     NSString *val_s = [NSString stringWithFormat:@"%d", val];
@@ -63,7 +63,6 @@ NMSSHSession *session;
     int sliderValue = self.slider.intValue;
     val = sliderValue;
     [self volumeController:val];
-    NSLog(@"slide val %d", val);
 }
 
 
@@ -92,7 +91,7 @@ NMSSHSession *session;
     NSString *ip_address_pre_edit = [words[indexOfTheObject+1] stringByReplacingOccurrencesOfString:@"(" withString:@""];
     NSString *raspberry_pi_ip_address = [ip_address_pre_edit stringByReplacingOccurrencesOfString:@")" withString:@""];
     self.remote_ip_address=raspberry_pi_ip_address;
-    NSLog (@"arp returned:\n%@",_remote_ip_address);
+
     if (_remote_ip_address.length==0){
         _connected.hidden = YES;
     }
